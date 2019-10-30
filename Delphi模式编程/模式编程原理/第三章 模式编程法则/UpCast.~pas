@@ -1,0 +1,112 @@
+unit UpCast;
+
+interface
+
+uses
+  SysUtils, Windows, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs;
+
+type
+  TFruit = class (TObject)
+  protected
+    FName: string;
+  public
+    constructor create(name:String);
+    procedure eat; virtual; abstract;
+  end;
+  
+  TApple = class (TFruit)
+  public
+    procedure eat; override;
+  end;
+  
+  TBanana = class (TFruit)
+  public
+    procedure eat; override;
+  end;
+  
+  TClient = class (TObject)
+  public
+    procedure eatFruit;
+    procedure ShowClassName(o:TObject);
+  end;
+  
+  TGrape = class (TFruit)
+  public
+    procedure eat; override;
+  end;
+  
+
+
+implementation
+
+
+{
+************************************ TFruit ************************************
+}
+constructor TFruit.create(name:String);
+begin
+  FName:=name;
+end;
+
+{
+************************************ TApple ************************************
+}
+procedure TApple.eat;
+begin
+  ShowMessage(FName+'削皮吃。');
+end;
+
+{
+*********************************** TBanana ************************************
+}
+procedure TBanana.eat;
+begin
+  ShowMessage(FName+'剥皮吃。');
+end;
+
+
+
+{
+************************************ TGrape ************************************
+}
+procedure TGrape.eat;
+begin
+  ShowMessage('吃'+FName+'要吐葡萄皮。');
+end;
+
+{
+*********************************** TClient ************************************
+}
+procedure TClient.eatFruit;
+var
+  Fruit:TFruit;
+  Banana:TBanana ;
+begin
+  Fruit:=TApple.create('红苹果');
+  ShowClassName(Fruit);
+  Fruit.eat;
+  ShowClassName(Banana);
+  Fruit.Free;
+
+  Fruit:=TBanana.create('进口香蕉');
+  ShowClassName(Fruit);
+  Fruit.eat;
+  Fruit.Free;
+
+  Fruit:=TGrape.create('吐鲁番葡萄');
+  ShowClassName(Fruit);
+  Fruit.eat;
+  Fruit.Free;
+end;
+
+procedure TClient.ShowClassName(o:TObject);
+var
+  Name,ParentName:string;
+begin
+  Name:=o.ClassName;
+  ParentName:=o.ClassParent.ClassName;
+  ShowMessage('当前对象类的名称：'+Name+#10+'基类（父类）的名称：'+ParentName);
+end;
+
+end.

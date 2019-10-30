@@ -1,0 +1,42 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = AccountTransfer.exe ComTransferFacade.dll ComBank.dll \
+  ComCustomer.dll ComAccountOut.dll ComAccountIn.dll ComTransfer.dll ComDB.dll
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+AccountTransfer.exe: AccountTransfer.dpr
+  $(DCC)
+
+ComTransferFacade.dll: ComTransferFacade.dpr
+  $(DCC)
+
+ComBank.dll: ComBank.dpr
+  $(DCC)
+
+ComCustomer.dll: ComCustomer.dpr
+  $(DCC)
+
+ComAccountOut.dll: ComAccountOut.dpr
+  $(DCC)
+
+ComAccountIn.dll: ComAccountIn.dpr
+  $(DCC)
+
+ComTransfer.dll: ComTransfer.dpr
+  $(DCC)
+
+ComDB.dll: ComDB.dpr
+  $(DCC)
+
+

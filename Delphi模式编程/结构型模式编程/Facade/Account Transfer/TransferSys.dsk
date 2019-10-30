@@ -1,0 +1,567 @@
+[Closed Files]
+File_0=SourceModule,'K:\Delphi模式编程\书稿\结构型模式\Facade\门面模式\Facade.PAS',0,1,1,58,11,0,0
+File_1=SourceModule,'F:\Delphi与模式\书稿\Facade\Account Transfer\Account.PAS',0,1,5,78,12,0,0
+File_2=SourceModule,'F:\Delphi与模式\书稿\Facade\Account Transfer\TransferIF.PAS',0,1,4,14,5,0,0
+File_3=SourceModule,'F:\Delphi与模式\书稿\Facade\uFacade.PAS',0,1,100,5,115,0,0
+File_4=SourceModule,'F:\Delphi与模式\书稿\Facade\uClientFrm.pas',0,1,31,1,50,1,0
+File_5=SourceModule,'F:\软件开发资源\delphi资源\Delpdi源码\随书光盘程序\Inside VCL 源代码\Chap09\NotifyDesignPatternDemo\uObjects.pas',0,1,146,1,75,0,0
+File_6=SourceModule,'F:\软件开发资源\delphi资源\Delpdi源码\随书光盘程序\Inside VCL 源代码\Chap09\NotifyDesignPatternDemo\fmMain.pas',0,1,80,22,98,1,1
+
+[Modules]
+Module0=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\RDBM.PAS
+Module1=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Transfer.PAS
+Module2=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountIn.PAS
+Module3=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountOut.PAS
+Module4=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Customer.pas
+Module5=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Bank.PAS
+Module6=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\TransferFacade.PAS
+Module7=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransferFacade.tlb
+Module8=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ClientForm.pas
+Module9=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComDB.dpr
+Count=10
+EditWindowCount=1
+TypeLibWindowCount=7
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\RDBM.PAS]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Transfer.PAS]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountIn.PAS]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountOut.PAS]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Customer.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Bank.PAS]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\TransferFacade.PAS]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransferFacade.tlb]
+ModuleType=TypeLibModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ClientForm.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComDB.dpr]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\TransferSys.bpg]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountTransfer.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransferFacade.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComBank.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComBank.tlb]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComCustomer.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComCustomer.tlb]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComAccountOut.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComAccountOut.tlb]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComAccountIn.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComAccountIn.tlb]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransfer.dpr]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransfer.tlb]
+FormState=0
+FormOnTop=0
+
+[K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComDB.tlb]
+FormState=0
+FormOnTop=0
+
+[EditWindow0]
+ViewCount=10
+CurrentView=9
+View0=0
+View1=1
+View2=2
+View3=3
+View4=4
+View5=5
+View6=6
+View7=7
+View8=8
+View9=9
+CodeExplorer=CodeExplorer@EditWindow0
+MessageView=MessageView@EditWindow0
+Create=1
+Visible=1
+State=0
+Left=314
+Top=113
+Width=710
+Height=568
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=702
+ClientHeight=534
+LeftPanelSize=0
+RightPanelSize=0
+BottomPanelSize=0
+BottomPanelClients=MessageView@EditWindow0
+BottomPanelData=00000400010000000B0000004D65737361676556696577BE02000000000000025500000000000000010000000000000000000000000100000000A0020000000000000100000000BE020000000000000100000000BE02000000000000FFFFFFFF
+
+[View0]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComDB.dpr
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View1]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ClientForm.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View2]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransfer_TLB.pas
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View3]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\TransferFacade.PAS
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[View4]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Bank.PAS
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[View5]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Customer.pas
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[View6]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountOut.PAS
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[View7]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\AccountIn.PAS
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[View8]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\Transfer.PAS
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[View9]
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\RDBM.PAS
+CursorX=2
+CursorY=21
+TopLine=1
+LeftCol=1
+
+[TypeLibEditWindow0]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransferFacade.tlb
+
+[TypeLibEditWindow1]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComBank.tlb
+
+[TypeLibEditWindow2]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComCustomer.tlb
+
+[TypeLibEditWindow3]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComAccountOut.tlb
+
+[TypeLibEditWindow4]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComAccountIn.tlb
+
+[TypeLibEditWindow5]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComTransfer.tlb
+
+[TypeLibEditWindow6]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=114
+Width=639
+Height=453
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=631
+ClientHeight=419
+Module=K:\Delphi模式编程\书稿\结构型模式\Facade\Account Transfer\ComDB.tlb
+
+[Watches]
+Count=0
+
+[WatchWindow]
+WatchColumnWidth=100
+WatchShowColumnHeaders=1
+Create=1
+Visible=0
+State=0
+Left=396
+Top=135
+Width=421
+Height=149
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=413
+ClientHeight=123
+TBDockHeight=149
+LRDockWidth=421
+Dockable=1
+
+[Breakpoints]
+Count=0
+
+[AddressBreakpoints]
+Count=0
+
+[Main Window]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=1024
+Height=112
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=1016
+ClientHeight=78
+
+[ProjectManager]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=270
+Height=576
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=270
+ClientHeight=576
+TBDockHeight=183
+LRDockWidth=236
+Dockable=1
+
+[Components]
+Left=240
+Top=237
+Width=223
+Height=287
+Create=1
+Visible=0
+State=0
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=215
+ClientHeight=261
+TBDockHeight=287
+LRDockWidth=223
+Dockable=1
+
+[CPUWindow]
+Create=1
+Visible=0
+State=0
+Left=245
+Top=207
+Width=533
+Height=353
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=525
+ClientHeight=319
+DumpPane=79
+DisassemblyPane=187
+RegisterPane=231
+FlagPane=64
+
+[AlignmentPalette]
+Create=1
+Visible=0
+State=0
+Left=200
+Top=107
+Width=156
+Height=84
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=150
+ClientHeight=60
+
+[PropertyInspector]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=270
+Height=576
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=270
+ClientHeight=576
+TBDockHeight=183
+LRDockWidth=236
+Dockable=1
+SplitPos=128
+ArrangeBy=Name
+SelectedItem=Name
+ExpandedItems=
+HiddenCategories=
+
+[CallStackWindow]
+Create=1
+Visible=0
+State=0
+Left=365
+Top=303
+Width=294
+Height=161
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=286
+ClientHeight=135
+TBDockHeight=161
+LRDockWidth=294
+Dockable=1
+
+[ObjectTree]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=270
+Height=576
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=270
+ClientHeight=576
+TBDockHeight=569
+LRDockWidth=236
+Dockable=1
+
+[ToDo List]
+Create=1
+Visible=0
+State=0
+Left=277
+Top=259
+Width=470
+Height=250
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=462
+ClientHeight=224
+TBDockHeight=250
+LRDockWidth=470
+Dockable=1
+Column0Width=200
+Column1Width=30
+Column2Width=100
+Column3Width=70
+Column4Width=70
+SortOrder=4
+ShowHints=1
+ShowChecked=1
+
+[CodeExplorer@EditWindow0]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=0
+Width=270
+Height=576
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=270
+ClientHeight=576
+TBDockHeight=279
+LRDockWidth=236
+Dockable=1
+
+[MessageView@EditWindow0]
+Create=1
+Visible=0
+State=0
+Left=12
+Top=0
+Width=690
+Height=85
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=690
+ClientHeight=85
+TBDockHeight=85
+LRDockWidth=443
+Dockable=1
+
+[DockHosts]
+DockHostCount=1
+
+[DockSite0]
+DockSiteType=1
+Create=1
+Visible=1
+State=0
+Left=8
+Top=110
+Width=305
+Height=610
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=297
+ClientHeight=584
+TBDockHeight=610
+LRDockWidth=351
+Dockable=1
+TabPosition=2
+ActiveTab=Project Manager
+TabDockClients=ProjectManager,PropertyInspector,CodeExplorer@EditWindow0,ObjectTree
+
+[ActiveProject]
+ActiveProject=1
+

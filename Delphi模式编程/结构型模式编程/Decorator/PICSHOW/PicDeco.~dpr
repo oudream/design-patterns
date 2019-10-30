@@ -1,0 +1,15 @@
+program PicDeco;
+
+uses
+  Forms,
+  frmMain in 'frmMain.pas' {DisplayForm},
+  frmImage in 'frmImage.pas' {ImageForm},
+  PicDecorator in 'PicDecorator.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TDisplayForm, DisplayForm);
+  Application.Run;
+end.

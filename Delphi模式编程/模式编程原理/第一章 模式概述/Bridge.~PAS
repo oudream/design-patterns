@@ -1,0 +1,111 @@
+unit Bridge;
+
+interface
+
+uses
+  SysUtils, Windows, Messages, Classes, Graphics, Controls,
+  Forms, Dialogs;
+
+type
+  THardComputer = class (TObject)
+  private
+    FName: string;
+  public
+    constructor Create(name:string);
+    procedure Run; virtual; abstract;
+  end;
+  
+  THardDesktop = class (THardComputer)
+  public
+    procedure Run; override;
+  end;
+  
+  THardPalmtop = class (THardComputer)
+  public
+    procedure Run; override;
+  end;
+  
+  TSoftComputer = class (TObject)
+  private
+    FComputer: THardComputer;
+    procedure SetComputer(Value: THardComputer);
+  public
+    procedure SysRun; virtual;
+    property Computer: THardComputer read FComputer write SetComputer;
+  end;
+  
+  TSoftPalmtop = class (TSoftComputer)
+  public
+    procedure SysRun; override;
+  end;
+  
+  TSoftDesktop = class (TSoftComputer)
+  public
+    procedure SysRun; override;
+  end;
+  
+implementation
+
+
+{
+******************************** THardComputer *********************************
+}
+constructor THardComputer.Create(name:string);
+begin
+  FName:=name;
+end;
+
+{
+********************************* THardDesktop *********************************
+}
+procedure THardDesktop.Run;
+begin
+  ShowMessage(FName+'开机运行，加载220V电源...');
+  ShowMessage('台式机：'+FName+'硬件工作正常！');
+end;
+
+{
+********************************* THardPalmtop *********************************
+}
+procedure THardPalmtop.Run;
+begin
+  ShowMessage(FName+'开机运行,接通锂电池...');
+  ShowMessage('掌上电脑：'+FName+'硬件工作正常！');
+end;
+
+{
+******************************** TSoftComputer *********************************
+}
+procedure TSoftComputer.SetComputer(Value: THardComputer);
+begin
+  FComputer:=Value;
+end;
+
+procedure TSoftComputer.SysRun;
+begin
+  FComputer.Run;
+end;
+
+{
+********************************* TSoftPalmtop *********************************
+}
+procedure TSoftPalmtop.SysRun;
+begin
+  inherited;
+  //自己的修正代码
+  ShowMessage('加载Palm OS 操作系统...');
+  ShowMessage('掌上机软件系统运行正常!');
+end;
+
+{
+********************************* TSoftDesktop *********************************
+}
+procedure TSoftDesktop.SysRun;
+begin
+  inherited;
+  //自己的修正代码
+  ShowMessage('加载Windows操作系统...');
+  ShowMessage('台式机软件系统运行正常!');
+end;
+
+end.

@@ -1,0 +1,49 @@
+object Client: TClient
+  Left = 259
+  Top = 114
+  Width = 407
+  Height = 207
+  Caption = #35299#37322#22120'(Interpreter)'#27169#24335#24212#29992':'#25968#23383#36716#25442#22120
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = #23435#20307
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 12
+  object btnInt: TBitBtn
+    Left = 160
+    Top = 72
+    Width = 75
+    Height = 25
+    Caption = #36716#25442'>>'
+    TabOrder = 0
+    OnClick = btnIntClick
+  end
+  object edtRome: TLabeledEdit
+    Left = 24
+    Top = 72
+    Width = 121
+    Height = 20
+    EditLabel.Width = 48
+    EditLabel.Height = 12
+    EditLabel.Caption = #32599#39532#25968#23383
+    ImeName = #20013#25991#20043#26143#26234#33021#29378#25340#8545#26631#20934#29256
+    TabOrder = 1
+  end
+  object edtNum: TLabeledEdit
+    Left = 248
+    Top = 72
+    Width = 121
+    Height = 20
+    EditLabel.Width = 60
+    EditLabel.Height = 12
+    EditLabel.Caption = #38463#25289#20271#25968#23383
+    ImeName = #20013#25991#20043#26143#26234#33021#29378#25340#8545#26631#20934#29256
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,53 @@
+unit ClientForm;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls,Bridge, ExtCtrls;
+
+type
+  TClient = class (TForm)
+    btnTest: TButton;
+    RadioGroup1: TRadioGroup;
+    edtName: TLabeledEdit;
+    procedure btnTestClick(Sender: TObject);
+  end;
+  
+var
+  Client: TClient;
+
+implementation
+
+{$R *.dfm}
+
+{
+*********************************** TClient ************************************
+}
+procedure TClient.btnTestClick(Sender: TObject);
+var
+  AbstractComputer:TSoftComputer;
+  Computer:THardComputer;
+begin
+  try
+    if  RadioGroup1.ItemIndex=0 then
+    //台式机
+    begin
+      AbstractComputer:=TSoftPalmtop.Create;
+      AbstractComputer.Computer:=THardPalmtop.Create(edtName.Text);
+    end
+    else
+    //掌上机
+    begin
+      AbstractComputer:=TSoftDesktop.Create;
+      AbstractComputer.Computer:=THardDesktop.Create(edtName.Text);
+    end;
+    AbstractComputer.SysRun;
+  finally
+    AbstractComputer.Computer.Free;
+    AbstractComputer.Free;
+  end;
+end;
+
+end.
+
